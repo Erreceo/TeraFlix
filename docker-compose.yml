@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    teraflix-back:
+        build: .
+        command: npm run server
+        ports:
+          - 8080:8080
+          - 9229:9229
+        volumes:
+          - .:/usr/app
